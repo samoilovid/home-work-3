@@ -16,7 +16,6 @@ public class Mail {
         }
         else {
 
-
             if (totalValueOfAllPreviousPurchases<= priceLimitTwo){
                 int accruedBonuses = currentPurchasePrice/fixedAmount*bonusSilverLevel;
                 System.out.println(accruedBonuses);
