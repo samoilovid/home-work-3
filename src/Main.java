@@ -9,19 +9,15 @@ public class Main {
         int priceLimitOne = 15_000;
         int priceLimitTwo = 150_000;
         if (totalValueOfAllPreviousPurchases<= priceLimitOne) {
-        int accruedBonuses = currentPurchasePrice/fixedAmount*bonusStandardLevel;
-        System.out.println(accruedBonuses);
+            int accruedBonuses = currentPurchasePrice/fixedAmount*bonusStandardLevel;
+            System.out.println(accruedBonuses);
+        } else { if (totalValueOfAllPreviousPurchases<= priceLimitTwo){
+            int accruedBonuses = currentPurchasePrice/fixedAmount*bonusSilverLevel;
+            System.out.println(accruedBonuses);
+        } else if (totalValueOfAllPreviousPurchases> priceLimitTwo){
+            int accruedBonuses = currentPurchasePrice/fixedAmount*bonusSilverLevel;
+            System.out.println(accruedBonuses);
         }
-          else {
-
-          if (totalValueOfAllPreviousPurchases<= priceLimitTwo){
-          int accruedBonuses = currentPurchasePrice/fixedAmount*bonusSilverLevel;
-          System.out.println(accruedBonuses);
-          }
-          else if (totalValueOfAllPreviousPurchases> priceLimitTwo){
-          int accruedBonuses = currentPurchasePrice/fixedAmount*bonusSilverLevel;
-          System.out.println(accruedBonuses);
-          }
 
         }
     }
