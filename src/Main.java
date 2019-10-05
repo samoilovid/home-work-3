@@ -24,6 +24,7 @@ public class Main {
         int accruedBonuses = currentPurchasePrice/fixedAmount*bonusSilverLevel;
         System.out.println(accruedBonuses);
         }
+
         }
     }
 
