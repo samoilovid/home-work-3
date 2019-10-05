@@ -1,5 +1,3 @@
-import com.sun.corba.se.impl.orb.ParserTable;
-
 public class Main {
     public static void main(String[] args) {
         int totalValueOfAllPreviousPurchases= 100000;
@@ -14,16 +12,16 @@ public class Main {
         int accruedBonuses = currentPurchasePrice/fixedAmount*bonusStandardLevel;
         System.out.println(accruedBonuses);
         }
-        else {
+          else {
 
-        if (totalValueOfAllPreviousPurchases<= priceLimitTwo){
-        int accruedBonuses = currentPurchasePrice/fixedAmount*bonusSilverLevel;
-        System.out.println(accruedBonuses);
-        }
-        else if (totalValueOfAllPreviousPurchases> priceLimitTwo){
-        int accruedBonuses = currentPurchasePrice/fixedAmount*bonusSilverLevel;
-        System.out.println(accruedBonuses);
-        }
+          if (totalValueOfAllPreviousPurchases<= priceLimitTwo){
+          int accruedBonuses = currentPurchasePrice/fixedAmount*bonusSilverLevel;
+          System.out.println(accruedBonuses);
+          }
+          else if (totalValueOfAllPreviousPurchases> priceLimitTwo){
+          int accruedBonuses = currentPurchasePrice/fixedAmount*bonusSilverLevel;
+          System.out.println(accruedBonuses);
+          }
 
         }
     }
